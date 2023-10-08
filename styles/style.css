@@ -28,12 +28,24 @@
     font-family: "Raleway";
     font-weight: 400;
     color: rgba(0, 0, 0, 1);
-    width: 108px;
-    height: 21px;
+    
   }
   .об_аукцион {
     font-size: 18px;
     font-family: "Raleway";
     font-weight: 400;
-    color: rgba(0, 0, 0, 1);
+    color: rgba(0, 0, 0, 1)
   }
+  .наб._принс {
+    font-size: 18px;
+   font-family: "Raleway";
+   font-weight: 400;
+   color: rgba(0, 0, 0, 1);
+  }
+.lot_1, .lot_2, .lot_3 {
+    width: 430px;
+    height: 450px;
+    flex-shrink: 0; 
+    background: url(<path-to-image>),
+     lightgray 50% / cover no-repeat;
+}
