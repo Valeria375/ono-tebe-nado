@@ -11,24 +11,25 @@
     margin: 0;
   }
   .logo {
+    display: flex;
     width: 129.112px;
     height: 104.652px;
     flex-shrink: 0;
     display: block;
-    
+    margin: auto;
   }
   .cover {
-    width: 1440px;
-    height: 763.939px;
-    flex-shrink: 0;
-    opacity: 0.6;
-    background: #000;
+    
+    opacity: 0.2;
+    background-color: rgb(0 0 0/0.5);  
+    align-items: stretch;
+    
   }
   .об_аукционе {
     font-size: 18px;
     font-family: "Raleway";
     font-weight: 400;
-    color: rgba(0, 0, 0, 1);
+    color: #000;
     
   }
   .об_аукцион {
@@ -48,8 +49,16 @@
     height: 450px;
     flex-shrink: 0; 
     background: url(<path-to-image>),
-     lightgray 50% / cover no-repeat;
+     lightgray 50% ;
 }
-.form {
+.header {
+  display: flex;
+  justify-content: space-between;
+
+}
+.info {
+  justify-content: end;
+}
+.main {
   display: flex;
 }
