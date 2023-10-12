@@ -18,12 +18,34 @@
     display: block;
     margin: auto;
   }
+  
   .cover {
+    position: relative;
+    background-image: url(../images/cover.jpg);
+    filter: brightness(30%);
+    background-position: center bottom;
+    background-size: 1440px;
+    width: 1440px;
+    height: 774px;
     
-    opacity: 0.2;
-    background-color: rgb(0 0 0/0.5);  
-    align-items: stretch;
     
+  }
+  .title{
+    color: #FFF;
+    font-family: Raleway;
+    font-size: 100px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 115%;
+    letter-spacing: 60px;
+    text-transform: uppercase;
+  }
+  .title_1 {
+    text-align: left;
+   
+  }
+  .title_2 {
+    text-align: center;
   }
   .об_аукционе {
     font-size: 18px;
@@ -61,4 +83,11 @@
 }
 .main {
   display: flex;
+}
+ul {
+ list-style: circle; 
+}
+.card-lot-1 {
+  background-image: url(/images/card-lot-01.jpg);
+  
 }
