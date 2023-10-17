@@ -1,39 +1,65 @@
 * {
     box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    
   }
   
   body {
-    min-width: 850px;
-    font-family: 'Raleway', sans-serif;
+    color: #000;
+    font-family: Raleway;
     font-size: 18px;
-    margin: 0;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+
   }
-  .logo {
+  .header {
     display: flex;
-    width: 129.112px;
-    height: 104.652px;
-    flex-shrink: 0;
-    display: block;
-    margin: auto;
+    margin-top: 92px;
+    justify-content:space-between;
+
   }
-  
+  .header__links-list {
+    display: flex;
+    list-style: circle;
+    justify-content: space-evenly;
+    gap: 32px;
+    align-items: center;
+  }
+  .header__links-list-item_no-bullit {
+    list-style: none;
+  }
+  .header__logo-image {
+    display: flex;
+    width: 148px;
+    height: 105px;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+  .header__address {
+    justify-content: right;
+  }
   .cover {
     position: relative;
-   
     background-image: url(../images/cover.jpg);
     background-position: center bottom;
     background-size: 1440px;
     width: 1440px;
-    height: 774px;
+    height: 758px;
+    background-size: cover;
+    position: relative; /* для полупрозрачного фона поверх секции*/
+    margin-top: 96px;
   }
-  .cover :before {
+
+  .overlay{
+    position: absolute;
+    background: rgba(0 0 0/ 0.6);
+    opacity: 0.4;
     width: 100%;
     height: 100%;
-    background-color:rgba(0, 0, 0, .6);
+    z-index: 0;
   }
-  .title{
+  .cover__title {
+    display:inline-block ;
     color: #FFF;
     font-family: Raleway;
     font-size: 100px;
@@ -42,44 +68,78 @@
     line-height: 115%;
     letter-spacing: 60px;
     text-transform: uppercase;
+    align-items: center;
   }
-  .title_1 {
+  .aligned_text {
     text-align: left;
    
   }
-  .title_2 {
+  .aligned_text_center {
     text-align: center;
   }
-  .об_аукционе {
-    font-size: 18px;
-    font-family: "Raleway";
-    font-weight: 400;
-    color: #000;
+  .aligned_text_right {
+    text-align: right;
+  }
+  .cover_description {
+    display: flex;
+    justify-content: end;
+  }
+  
+  .cover_description-text {
+   
+    color: #FFF;
     
-  }
-  .об_аукцион {
-    font-size: 18px;
-    font-family: "Raleway";
+    text-align: center;
+    font-family: Raleway;
+    font-size: 22px;
+    font-style: normal;
     font-weight: 400;
-    color: #000
+    text-transform: uppercase;
   }
-  .наб._принс {
-    font-size: 18px;
-   font-family: "Raleway";
-   font-weight: 400;
-   color: #000;
+  .lots{
+    margin-top: 181px;
   }
-.card-lot-01, .card-lot-02, .card-lot-03 {
+  .lots__heading{
+    margin-bottom: 27px;
+    color: #000;
+    font-family: Raleway;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    text-transform: uppercase;
+    margin-left: 90px;
+  }
+  .lots__card-list {
+    gap: 25px;
+    display: flex;
+    margin-left: 50px;
+    justify-content: space-between;
+  }
+.lots__card-list-item {
     width: 430px;
     height: 450px;
     color: #FFF;
     flex-wrap: wrap;
 }
-.header {
-  display: flex;
-  justify-content: space-between;
-
+.card_type_film {
+  background-image: url(../images/card-lot-01.jpg);
+  background-size: 430px 450px;
 }
+.card_type_book {
+  background-image: url(../images/card-lot-02.jpg);
+  background-size: 430px 450px;
+}
+.card_type_picture {
+  background-image: url(../images/card-lot-03.jpg);
+  background-size: 430px 450px;
+}
+
+
+
+
+
+
 .info {
   justify-content: end;
 }
@@ -87,18 +147,8 @@
   display: flex;
 }
 
-.card-lot-01 {
-  background-image: url(../images/card-lot-01.jpg);
-  background-size: 430px 450px;
-}
-.card-lot-02 {
-  background-image: url(../images/card-lot-02.jpg);
-  background-size: 430px 450px;
-}
-.card-lot-03 {
-  background-image: url(../images/card-lot-03.jpg);
-  background-size: 430px 450px;
-}
+
+
 .logo_2{
   background-image: url(/images/logo-white.svg);
   margin-top: 63px;
@@ -138,3 +188,11 @@
   display: flex;
   justify-content: space-evenly;
 }
+.pixel-perfect-image {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.5;
+    filter: sepia(0.6);
+} 

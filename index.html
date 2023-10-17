@@ -7,51 +7,69 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Оно тебе надо — аукцион вещей, в которые никто не верил</title>
   <link rel="stylesheet" href="./fonts/fonts.css" />
+  <link rel="stylesheet" href="./styles/global.css"/>
   <link rel="stylesheet" href="./styles/style.css" />
 </head>
 
 <body>
   <header class="header">
-    <div>
-      <p>Главная</p>
+    <div class="header__menu">
+    
     </div>
-    <ul>
-      <li>Посмотреть лоты</li>
+    <ul class="header__links-list">
+      <li class="header__links-list-item_no-bullit">
+        <a class="header__link">Главная</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__link" href="#">Посмотреть лоты</a>
+      </li>
+      <li class="header__links-list-item">
+        <a class="header__links-list-item" href="#">Об аукционе</a>
+      </li>
     </ul>
-    <ul>
-      <li>Об аукционе</li>
-    </ul>
-
-    <img class="logo" src="./images/logo-black.svg" alt="логотип оно тебе надо" />
-    <div class="info">
-      <p class="phone">+9 999 555 5555</p>
-      <p class="email">info@sobaka.ge</p>
-      <p>наб. Принсенграхт 263-265, Амстердам</p>
+    <div class="header__logo">
+      <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип оно тебе надо" />
+    </div>
+    <div class="header__address">
+      <p><a href="tel:+99995555555"></a>+9 999 555 5555</p>
+      <p class="email"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
+      <address>наб. Принсенграхт 263-265,<br>Амстердам</address>
     </div>
   </header>
 
-  <main class="cover">
-    <h1 class="title">
-      <p class="title_1">ОНО</p>
-      <p class="title_2">ТЕБЕ</p>
-      <p class="title_3">НАДО</p>
-    </h1>
+<section class="cover">
+  <div class="overlay">
+      <h1 class="cover__title">
+        <span class="aligned_text">ОН
+          <span class="letter-spasing-extended"> О </span>
+        </span>
+        <span class="aligned_text_center">ТЕБ
+         <span class="letter-spasing-extended"> Е
+        </span>
+        <span class="aligned_text_right">НАДО</span>
+      </h1>
 
-    <p>Аукцион вещей, в которые никто не верил</p>
-    <button href="#0">Сделать вставку</button>
-  </main>
+      <div class="cover_description">
+       <p class="cover_description-text"> Аукцион вещей, в которые никто не верил</p>
+       <button">Сделать вставку</button>
+      </div>
+      
+   </div>
+  </section>
+
+
   <section class="lots">
-    <h1>Лоты</h1>
-    <ul class="lots_1">
-      <li class="card-lot-01">
+    <h1 class="lots__heading">Лоты</h1>
+    <ul class="lots__card-list">
+      <li class="lots__card-list-item card_type_film">
         <p>ФИЛЬМ РЕЖИССЕРА, КОТОРЫЙ БРОСИЛ ШКОЛУ</p>
         <p>
           Не просто бросил, а ушел с первой лекции.Какой была ваша ставка,
           если бы вы не знали, что режиссер - Пол Томас Андерсон?
         </p>
       </li>
-      <li class="card-lot-02">
-        <p>Книга, где описан один скучный день из жизни рекламного агента</p>
+      <li class="lots__card-list-item card_type_book">
+        <p> Книга, где описан один скучный день из жизни рекламного агента</p>
         <p>
           Объёмом почти в тысячу страниц. Иногда без знаков препинания и с
           переходами на древнеанглийский. В ней одновременно рассказывается о
@@ -60,7 +78,7 @@
           бы вы поставили на «Улисса» Джеймса Джойса?
         </p>
       </li>
-      <li class="card-lot-03">
+      <li class="lots__card-list-item card_type_picture">
         <p>Картина, которую повторит даже 5-летний сын маминой подруги</p>
         <p>
           Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то
@@ -71,6 +89,7 @@
       </li>
     </ul>
     <p>посмотреть больше</p>
+    
   </section>
   <div class="logo-column">
      <div class="elips">
