@@ -66,7 +66,7 @@
     font-style: normal;
     font-weight: 700;
     line-height: 115%;
-    
+    letter-spacing: 30px;
     text-transform: uppercase;
     align-items: center;
     z-index: 2;
@@ -76,32 +76,32 @@
     margin-right: 50px;
   }
   .aligned_text {
-    background-color: bisque;
+    
     text-align: left;
     display: block;
     margin-top: 165px;
-    letter-spacing: 30px;
+    
   }
   .aligned_text_center {
-    background-color: aquamarine;
+    
     text-align: center;
     display: block;
     text-align: center;
-    margin-right: 110px;
+   
     line-height: 100%;
     margin-top: 20px;
-    letter-spacing: 30px;
-
+   width: 1340px;
   }
+
   .letter-spasing-extended {
     letter-spacing: 60px;
   }
   .aligned_text_right {
-    background-color:aqua;
+    
     text-align: right;
     display: block;
     text-align: right; 
-    letter-spacing: 30px;
+    
     line-height: 100%;
     margin-top: 20px;
 
@@ -109,28 +109,35 @@
   .no-letter-spacing {
     letter-spacing: 0px;
   }
+
+
   .cover_description {
     display: flex;
-    justify-content: end;
-    gap: 78px;
-    padding-bottom: 62px;
+    margin-top: 147px;
+    color: #FFF;
     text-align: center;
     font-family: Raleway;
     font-size: 22px;
     font-weight: 400;
     line-height: 28px;
     text-transform: uppercase;
+    gap: 78px;
+    background-color: aqua;
+    margin-left: 422px;
   }
   
-  .cover_description-text {
-   margin-left: 422px;
-    color: #FFF;
-    text-align: center;
-    font-family: Raleway;
-    font-size: 22px;
-    font-style: normal;
-    font-weight: 400;
-    text-transform: uppercase;
+ .cover_description-text {
+   letter-spacing: 1px;
+   word-spacing: 10px;
+  
+ }
+    .bet-button {
+    background: none;
+    border: 1px solid #FFF;
+    width: 257px;
+    height: 52px;
+    
+    
   }
   .lots{
     margin-top: 181px;
