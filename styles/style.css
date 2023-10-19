@@ -14,9 +14,9 @@
   .header {
     display: flex;
     margin-top: 92px;
-    justify-content:space-between;
-    z-index:;
-    margin-left: -120px;
+    align-self:self-start;
+    margin-left: 50px;
+    background-color: aquamarine;
   }
   .header__links-list {
     display: flex;
@@ -32,11 +32,10 @@
     display: flex;
     width: 148px;
     height: 105px;
-    flex-shrink: 0;
-    justify-content: center;
+    : center;
   }
   .header__address {
-    justify-self: end;
+    justify-self:end;
   }
   .cover {
     position: relative;
@@ -130,7 +129,7 @@
   display: block;
     padding-top: 12px;
    letter-spacing: 1px;
-   word-spacing: 10px;
+   word-spacing: 11px;
     text-align: center;
     margin-right: 78px;
  }
@@ -169,20 +168,27 @@
     margin-left: 90px;
   }
   .lots__card-list {
-    gap: 25px;
+    
     display: flex;
     margin-left: 50px;
-    justify-content: space-between;
+    justify-content:space-between;
   }
 .lots__card-list-item {
+    gap: 25px;
     width: 430px;
-    height: 450px;
+    min-height: 450px;
     color: #FFF;
     flex-wrap: wrap;
     position: relative;
+    z-index: 0;
 }
-  .card__title{
+  .card {
+    z-index: 2;
     display:flex;
+    flex-wrap: wrap;
+  }
+  .card__title{
+  
     margin: 50px 40px 0;
     align-items: center;
     color: #FFF;
@@ -205,6 +211,10 @@
   .card_type_picture {
     background-image: url(../images/card-lot-03.jpg);
     background-size:cover;
+  }
+  .card__text {
+    
+    align-items: flex-end;
   }
 
 
