@@ -52,11 +52,11 @@
   .header__address {
     justify-self:end;
   }
-  .address {
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24.8px; 
- }
+.address {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 24.8px; 
+}
   .cover {
     position: relative;
     background-image: url(../images/cover.jpg);
