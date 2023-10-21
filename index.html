@@ -30,9 +30,11 @@
       <img class="header__logo-image" src="./images/logo-black.svg" alt="логотип оно тебе надо" />
     </div>
     <div class="header__address">
-      <p><a href="tel:+99995555555"></a>+9 999 555 5555</p>
+      <div class="address">
+      <p><a href="tel:+99995555555">+9 999 555 5555</a></p>
       <p class="email"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
       <address>наб. Принсенграхт 263-265,<br>Амстердам</address>
+    </div>
     </div>
  
   </header>
@@ -49,7 +51,7 @@
       </h1>
 
       <div class="cover_description">
-       <p class="cover_description-text"> Аукцион вещей, в которые никто не верил</p>
+       <p class="cover_description-text"> Аукцион вещей, в которые никто не   верил</p>
        <button class="bet-button">Сделать ставку</button>
       </div>
       
@@ -137,29 +139,43 @@
   </div>
 </section>
 
-  <footer>
-<!-- <address class="address">
-    <p><a href="tel:+99995555555"></a>+9 999 555 5555</p>
-    <p class="email"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
-    <address>наб. Принсенграхт 263-265,<br>Амстердам</address>
-</address> -->
+  <footer class="footer">
+  <div class="address">
+      <p><a href="tel:+99995555555"></a>+9 999 555 5555</p>
+      <p class="email"><a href="mailto:info@sobaka.ge">info@sobaka.ge</a></p>
+      <address>наб. Принсенграхт 263-265,<br>Амстердам</address>
+  </div> 
 <nav class="footer__menu">
-  <div class="footer__menu-list">
-    <div class="footer__menu-list-item">
-      <a href="#" class="footer__menu-link">
-
-      </a>
-
-    </div>
-  </div>
-
+    <ul class="footer__menu-list">
+      <li class="footer__menu-list-item">
+        <a class="footer__menu-link_active" href="#">главная</a>
+      </li>
+      <li class="footer__menu-list-item">
+        <a class="footer__menu-link" href="#">посмотреть лоты</a>
+      </li>
+      <li class="footer__menu-list-item">
+        <a class="footer__menu-link" href="#">об аукционе</a>
+      </li>
+    </ul>
 </nav>
-<div class="footer__social-list">
-  <div class="footer__social-list-item">
-    <a href="#" class="footer__social-link">
+
+<ul class="footer__social-list">
+  <li class="footer__social-list-item">
+    <a href="https://www.youtube.com/" class="footer__social-link" >
+      <img src="./images/yt.svg" class="footer__menu-icon">
     </a>
-  </div>
-</div>
+  </li>
+  <li class="footer__social-list-item">
+    <a href="https://vk.com/feed" class="footer__social-link" >
+      <img  src="./images/vk.svg" class="footer__menu-icon">
+    </a>
+  </li>
+  <li class="footer__social-list-item">
+    <a href="https://ru.pinterest.com/" class="footer__social-link" >
+      <img src="./images/pinterest.svg" class="footer__menu-icon">
+    </a>
+  </li>
+</ul>
   </footer>
+
 </body>
-</html>
