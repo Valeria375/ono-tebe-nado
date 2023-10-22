@@ -63,7 +63,7 @@
   max-height: 757px;
   background-size: cover;
   /* margin-top: 96px; */
-  z-index: -1;
+  z-index: 1;
   background-repeat: no-repeat;
   margin-right: 50px;
 }
@@ -74,9 +74,10 @@
   background: rgba(0 0 0/ 0.6);
   width: 100%;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
 }
 .cover__title {
+  position: relative;
   display: block;
   color: #fff;
   font-size: 100px;
@@ -123,6 +124,7 @@
 }
 .cover_description {
   display: flex;
+  position: relative;
   margin-top: 135px;
   color: #fff;
   text-align: center;
@@ -135,6 +137,7 @@
   /* background-color: aquamarine; */
   margin-right: 50px;
   /* margin-left: 422px; */
+  z-index: 2;
 }
 
 .cover_description-text {
@@ -206,8 +209,7 @@
 }
 .card {
   display: flex;
-
-  z-index: 2;
+  z-index: 1;
   flex-wrap: wrap;
   background-position: center;
   /* width: 100%; */
@@ -217,6 +219,10 @@
   padding: 50px 40px;
   background-size: 430px;
   background-repeat: no-repeat;
+}
+.lots__text{
+  position: relative;
+  z-index: 2;
 }
 .card__title {
   display: flex;
