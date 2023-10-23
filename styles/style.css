@@ -338,7 +338,7 @@
 }
 .footer {
   display: grid;
-  grid-template-columns: 1.1fr 1fr 1.3fr;
+  grid-template-columns: 1.1fr 1fr 1.1fr;
   margin: 180px 50px 90px;
   max-width: 1440px;
 }
