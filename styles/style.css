@@ -103,7 +103,6 @@
 .cover__title:first-child {
   /* row-gap: 0; */
   line-height: 115%;
-  
 }
 .aligned_text {
   display: flex;
@@ -364,6 +363,12 @@
   align-content: left;
   text-align: center;
   justify-content: left;
+  text-align: center;
+  font-family: Raleway, "Arial", "Helvetica", sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }
 
 .footer__social-list {
