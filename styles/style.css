@@ -2,8 +2,6 @@
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   align-self: self-start;
-  /* margin-left: 50px; */
-  /* margin-top: 92px; */
   margin: 92px 50px;
   font-size: 18px;
   align-items: center;
@@ -90,7 +88,8 @@
   /* width: 100%; */
   margin-left: 50px;
   margin-right: 50px;
-  padding-top: 165px; 
+  padding-top: 165px;
+  row-gap: 20px;
 }
 .cover__title:first-child {
   row-gap: 0;
