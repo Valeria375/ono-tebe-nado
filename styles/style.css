@@ -8,7 +8,7 @@
   font-size: 18px;
   align-items: center;
   /* width: 100%; */
-  max-width: 1440px;
+  width: 100%;
   /* justify-content: center; */
   min-width: 1340px;
 }
@@ -58,7 +58,7 @@
   background-position: center center;
   background-repeat: no-repeat;
   /* min-width: 1440px; */
-  /* width: 100%; */
+  width: 100%;
   min-height: 757px;
   background-size: cover;
   /* margin-top: 96px; */
@@ -76,8 +76,8 @@
 }
 .cover__title {
   position: relative;
-  display: block;
-  /* grid-template-rows: 1fr 1fr 1fr; */
+  display: flex;
+  flex-direction: column;
   color: #fff;
   font-size: 100px;
   font-style: normal;
@@ -85,34 +85,27 @@
   line-height: 100%;
   letter-spacing: 30px;
   text-transform: uppercase;
-  /* align-items: center; */
   z-index: 2;
-  max-width: 1340px;
-  height: 100%;
-  /* justify-content: center; */
-  /* align-content: center; */
-  width: 100%;
+  align-content: center;
+  /* width: 100%; */
   margin-left: 50px;
   margin-right: 50px;
-  /* padding-top: 165px; */
-  /* row-gap: 30px; */
-  background-color: aquamarine;
-  /* row-gap: 20px; */
-  /* padding-top: 20px; */
+  padding-top: 165px; 
 }
 .cover__title:first-child {
-  /* row-gap: 0; */
+  row-gap: 0;
+  /* padding-top: 0; */
   line-height: 115%;
 }
 .aligned_text {
-  display: flex;
+  /* display: flex; */
   text-align: left;
   /* display: block; */
   /* margin-top: 0; */
   /* padding-top: 0; */
 }
 .aligned_text_center {
-  display: block;
+  /* display: block; */
   text-align: center;
   line-height: 100%;
   /* margin-top: 20px; */
@@ -124,8 +117,8 @@
 }
 .aligned_text_right {
   text-align: right;
-  display: block;
-  line-height: 100%;
+  /* display: block; */
+  /* line-height: 100%; */
   /* margin-top: 20px; */
 }
 .no-letter-spacing {
@@ -178,7 +171,7 @@
 .lots {
   /* background-color: bisque; */
   /* margin-top: 181px; */
-  max-width: 1440px;
+  /* max-width: 1440px; */
   /* margin-left: 50px; */
   /* margin-right: 50px; */
   margin: 181px 50px 0;
@@ -276,7 +269,7 @@
   /* background-color: aquamarine; */
   margin-left: 50px;
   margin-right: 50px;
-  max-width: 1340px;
+  /* max-width: 1340px; */
   flex-wrap: wrap;
 }
 .about__logo-image {
