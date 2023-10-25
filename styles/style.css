@@ -87,7 +87,7 @@
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 165px;
-  gap: 25px;
+  gap: 30px;
 }
 .cover__title:first-child {
   gap: 0;
@@ -336,7 +336,7 @@
   display: grid;
   grid-template-columns: 1.1fr 1fr 1fr;
   margin: 180px 50px 90px;
-  max-width: 1440px;
+  /* max-width: 1440px; */
 }
 .footer__menu {
   display: flex;
@@ -357,7 +357,7 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
-  padding-right: 90px;
+  /* padding-right: 90px;*/
 }
 
 .footer__social-list {
@@ -372,7 +372,7 @@
   justify-self: right;
   /* margin-right: 100px; */
 }
-.footer__social-link_active {
+.footer__menu-link_active {
   text-decoration: none;
 }
 
