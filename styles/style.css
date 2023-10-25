@@ -352,12 +352,12 @@
   /* align-content: left; */
   text-align: center;
   justify-content: left;
-  text-align: center;
   font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+  padding-right: 90px;
 }
 
 .footer__social-list {
