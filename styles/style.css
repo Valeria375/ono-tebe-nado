@@ -5,9 +5,7 @@
   margin: 92px 50px;
   font-size: 18px;
   align-items: center;
-  /* width: 100%; */
-  width: 100%;
-  /* justify-content: center; */
+  justify-content: center;
   min-width: 1340px;
 }
 .header__menu {
@@ -89,10 +87,10 @@
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 165px;
-  row-gap: 20px;
+  gap: 25px;
 }
 .cover__title:first-child {
-  row-gap: 0;
+  gap: 0;
   /* padding-top: 0; */
   line-height: 115%;
 }
@@ -260,7 +258,6 @@
   text-decoration: underline;
   text-underline-offset: 5px;
 }
-
 .about {
   display: grid;
   grid-template-columns: auto 3fr;
@@ -352,7 +349,7 @@
 }
 .footer__menu-list {
   list-style: none;
-  align-content: left;
+  /* align-content: left; */
   text-align: center;
   justify-content: left;
   text-align: center;
