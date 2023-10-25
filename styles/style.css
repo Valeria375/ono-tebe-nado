@@ -39,7 +39,6 @@
   justify-self: end;
 }
 .address {
-  font-style: italic;
   font-size: 18px;
   font-weight: 400;
   line-height: 24.3px;
@@ -47,6 +46,8 @@
   max-width: 240px;
   flex-wrap: wrap;
   text-underline-offset: 4px;
+  font-style: normal;
+  
 }
 .cover {
   position: relative;
