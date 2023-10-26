@@ -21,6 +21,8 @@
 
 .header__links-list-item_no-bullit {
   list-style: none;
+}
+.header__link-active {
   text-decoration: none;
 }
 .header__logo {
@@ -47,7 +49,6 @@
   flex-wrap: wrap;
   text-underline-offset: 4px;
   font-style: normal;
-  
 }
 .cover {
   position: relative;
@@ -88,9 +89,9 @@
   margin-left: 50px;
   margin-right: 50px;
   padding-top: 165px;
-  gap: 30px;
+  gap: 20px;
 }
-.cover__title:first-child {
+.aligned_text:first-child {
   gap: 0;
   /* padding-top: 0; */
   line-height: 115%;
@@ -154,7 +155,7 @@
   background: transparent;
   border: 1px solid currentColor;
   width: 257px;
-  max-height: 52px;
+  min-height: 52px;
   text-align: center;
   font-family: Raleway, "Arial", "Helvetica", sans-serif;
   font-size: 22px;
@@ -163,8 +164,7 @@
   /* line-height: normal; */
   text-transform: uppercase;
   text-wrap: nowrap;
-  /* padding-top: 12px; */
-  /* padding-bottom: 12px; */
+  margin-bottom: 50px;
 }
 .lots {
   /* background-color: bisque; */
@@ -334,8 +334,9 @@
   /* word-spacing: 1px; */
 }
 .footer {
-  display: grid;
-  grid-template-columns: 1.1fr 1fr 1fr;
+  display: flex;
+  justify-content: space-between;
+  /* grid-template-columns: 1.1fr 1fr 1fr; */
   margin: 180px 50px 90px;
   /* max-width: 1440px; */
 }
